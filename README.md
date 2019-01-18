@@ -1,6 +1,6 @@
 # Serverless Example
 
-Serverless + TypeScript exdample
+Serverless + TypeScript example
 
 ## Local
 
