@@ -2,7 +2,8 @@
   "name": "serverless-example",
   "version": "0.0.0",
   "scripts": {
-    "start": "sls offline start"
+    "start": "sls offline start",
+    "deploy": "sls deploy"
   },
   "repository": "git@github.com:suguru03/serverless-example.git",
   "author": "Suguru Motegi <suguru.motegi@gmail.com>",
