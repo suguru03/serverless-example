@@ -12,6 +12,9 @@
 # Happy Coding!
 
 service: serverless-example # NOTE: update this with your service name
+plugins:
+  - serverless-offline
+  - serverless-plugin-typescript
 
 # You can pin your service to only deploy with a specific Serverless version
 # Check out our docs for more details
@@ -57,7 +60,10 @@ provider:
 functions:
   hello:
     handler: handler.hello
-
+    events:
+      - http:
+          path: hello
+          method: GET
 #    The following are a few example events you can configure
 #    NOTE: Please make sure to change your handler code to work with those events
 #    Check the event documentation for details
