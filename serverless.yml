@@ -59,7 +59,7 @@ provider:
 
 functions:
   hello:
-    handler: handler.hello
+    handler: src/functions/example.hello
     events:
       - http:
           path: hello
